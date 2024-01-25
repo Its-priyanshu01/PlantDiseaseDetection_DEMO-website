@@ -20,7 +20,7 @@ This web-based application allows users to detect diseases in plants based on im
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Run the Flask application using `python app.py`.
-4. Open your web browser and navigate to `http://127.0.0.1:5000/`.
+4. Open your web browser and navigate to `http://localhost/`.
 5. Upload an image of a plant to detect any diseases present and view recommended solutions.
 
 ## Project Structure
