@@ -1,0 +1,22 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Plant Disease Detection</title>
+</head>
+<body>
+    <body style="background-color: lightblue;">
+      <h1>Plant Disease Detection</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Detect Disease</button>
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+        <p>Solution: {{ solution }}</p>
+    {% endif %}
+</body>
+</html>
